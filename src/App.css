@@ -1,38 +1,249 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+}
+#page {
+  align-items: center;
+  /* text-align: center; */
+  /* background-color: aquamarine; */
+  margin-left: 30%;
+  margin-right: 30%;
+  /* margin-top: 3%; */
+  /* margin-bottom: 9%; */
+  padding: 3%;
+  /* padding-bottom: 1%; */
+  box-shadow: #FFFFFF;
+  border-color: blue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+  text-align: center;
+}
+body{
+  background-image: url(https://media.istockphoto.com/id/1263838232/photo/abstract-blurred-public-library-interior-background.jpg?b=1&s=170667a&w=0&k=20&c=LAoTVyPTliE3cphLR994dbAlInPM9Sdt5l5PiDr2h30=);
+}
+input {
+  padding-left: 7%;
+  padding-right: 6%;
+  padding-top: 0%;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+  text-align: justify;
+  font-size: medium;
+  font-weight: 500%;
+  /* padding: 4%; */
+  padding-top: 0.1%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+#login{
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-color: rgb(223, 10, 42);
+  background-color: rgb(98, 143, 241);
+}
+
+/* -------------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-size: cover;
+}
+
+.menu {
+  background-color: rgb(99, 157, 224);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  visibility: display;
+}.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  padding: 10px 20px;
   color: white;
+  font-size: 20px;
+  text-decoration: none;
+  align-items: center;
+}
+li {
+  text-align: left;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.submenu{
+  background-color: rgb(31, 103, 212);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+.submenu ul {
+  list-style: none;
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.submenu ul li {
+  padding: 10px 30px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  align-items: center;
+}
+input{
+  padding-left: 2%;
+  padding-top: 1%;
+  height: 2%;
+  margin-top: 3%;
+
+          /* padding-bottom: 2%;             */
+         /* margin-top: %;
+         margin-bottom: %;
+       */
+}
+.center-body{
+  padding: 0;
+  /* background-image: url("https://c1.wallpaperflare.com/preview/725/895/784/accessories-boy-fashion-gentleman.jpg"); */
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+span {
+  content: "\2706";
+  font-family: sans-serif;
+  color: rgb(2, 0, 8);
+  font-size: 28px;
+  margin-left: -3%;
+  margin-top: 1%;
+}
+.li{
+  margin-left: 80%;
+  margin-top: -1%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+#list{
+  margin-top: 3%;
+}
+#hi{
+  margin-left: -2%;
+}
+#new{
+ font-size: 40px;
+ margin-left: -3%;
+ margin-top: 2%;
+}
+#home{
+  margin-left: -12%;
+}#SHOP{
+  margin-left: -14%;
+  font-size: 40px;
+  margin-top: 2%;
+}
+#code{
+  font-size: 15px;
+  margin-left: -50%;
+  margin-top: 10%;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* -------------------------------------------------------------------------------------- */
+#pic{
+  margin-left: 50%;
+  margin-top: 7%;
+  border-color: blue;
+}
+.topic{
+  margin-top: -15%;
+   margin-left: 25%;
+    
+}
+/* ------------------------------------------------------------------------------------- */
+
+.sidebar {
+  margin-top: 0%;
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 0%;
+  /* visibility: hidden; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar a {
+  padding: 6px 8px 6px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  margin-top: 9%;
+
+}
+#navtag{
+  margin-top: 20%;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+#head{
+  text-align: center;
+  align-items: center;
+  color: rgb(242, 244, 250);
+  margin-left: 50%;
+}
+.topnav{
+  background-color: rgb(1, 4, 7);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  visibility: display;
+}
+/* ---------------------------------------------------------- */
+.add{
+  margin-left: 30%;
+  text-align: center;
+  margin-right: 30%;
+  background-color: dimgrey;
+  margin-top: 3%;
+}
+/* --------------------------------------------------------- */
+#table{
+  text-align: center;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 20%;
+  margin-top: 3%;
+  background-color: rgb(2, 5, 15);
+}
+th{
+  color: #FFFFFF;
 }
