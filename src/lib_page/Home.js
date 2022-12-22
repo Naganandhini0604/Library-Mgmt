@@ -44,7 +44,6 @@ function Home() {
           <a href="Admin_login.js">
           <img src="https://cdn3.f-cdn.com/contestentries/1733723/42113248/5e47d289f1335_thumb900.jpg"
           height="200px" width="200px" alt="" >
-        {/* //  <a href="Register.js"></a> */}
           </img></a>
           </button>
      </div>

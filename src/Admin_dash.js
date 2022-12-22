@@ -32,9 +32,10 @@ function Admin_dash() {
       </div>
         <div className="sidebar">
         <a href="Home.js"><i className="fa fa-fw fa-home" id="navtag"></i> Home</a>
-        <a href="#services"><i className="fa fa-fw fa-wrench" id="navtag"></i> Add Books</a>
-        <a href="#contact"><i className="fa fa-fw fa-envelope" id="navtag"></i> Book Search</a>
-        <a href="#clients"><i className="fa fa-fw fa-user" id="navtag"></i> Book Update</a>
+        <a href=""><i className="fa fa-fw fa-wrench" id="navtag"></i> Add Books</a>
+        <a href="Adminsearch.js"><i className="fa fa-fw fa-envelope" id="navtag"></i> Book Search</a>
+        <a href="Update.js"><i className="fa fa-fw fa-user" id="navtag"></i> Book Update</a>
+        <a href="Delete.js"><i className="fa fa-fw fa-envelope" id="navtag"></i> Delete</a>
         <a href="#contact"><i className="fa fa-fw fa-envelope" id="navtag"></i> View Order</a>
         <a href="#contact"><i className="fa fa-fw fa-envelope" id="navtag"></i> Log Out</a>
       </div>
@@ -49,7 +50,7 @@ function Admin_dash() {
             <input className="form-control" value={title} required onChange={(e)=>setTltle(e.target.value)} placeholder="Book Title"></input><br/>
         </div>
         <div className="form-group">
-            <input className="form-control" value={author_name} required onChange={(e)=>setAuthor_name(e.target.value)} placeholder="Authoe Name"></input><br/>
+            <input className="form-control" value={author_name} required onChange={(e)=>setAuthor_name(e.target.value)} placeholder="Author Name"></input><br/>
         </div>
         <div className="form-group">
             <input className="form-control" value={cost} required onChange={(e)=>setCost(e.target.value)} placeholder="Book Cost"></input><br/>

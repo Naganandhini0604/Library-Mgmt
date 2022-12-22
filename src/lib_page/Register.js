@@ -1,38 +1,17 @@
 import "bootstrap/dist/css/bootstrap.css";
 import React, { useState } from "react";
+import {useNavigate} from 'react-router-dom'
 
 function Register() {
-  // const {name,useName}=useState("");
-  // const {email,useEmail}=useState("");
-  // const {mobile,useMobile}=useState("");
-  // const {password,usePassword}=useState("");
-  // const {cpassword,useCpassword}=useState("");
-
-  // const handlesubmit=(e)=>{
-  //    e.preventDefault();
-  //    console.log(name);
-  // }
-  const [user, setUser] = useState({
-    name: "",
-    email: "",
-    mobile: "",
-    password: "",
-    cpassword: "",
-  });
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    // console.log(e.target)
-    setUser({
-      ...user,
-      [name]: value,
-    });
-    
-    //console.log(name,value)
-  };
+  const [name,setName]=useState("");
+  const [email,setEmail]=useState("");
+  const [mobile,setMobile]=useState("");
+  const [password,setPassword]=useState("");
+  const [cpassword,setCpassword]=useState("");
   
   const handlesubmit = (e) => {
     e.preventDefault();
-    // const { name, email, mobile, password, cpassword } = user;
+    const user = {name,email,mobile,password,cpassword};
     if(user.password !== user.cpassword){
       console.log("password dose not match");
       alert("password does not match!");
@@ -56,6 +35,10 @@ function Register() {
   }
 }
 
+const navigate=useNavigate();
+        const submit=()=>{
+          navigate("/Login.js");
+        }
 
   return (
     <div id="page">
@@ -67,9 +50,9 @@ function Register() {
           <input
             className="form-control"
             name="name"
-            value={user.name}
-            required
-            onChange={handleChange}
+            value={name} 
+            required 
+            onChange={(e)=>setName(e.target.value)}
           ></input>
         </div>
         <div className="form-group" controlid="formBasicEmail">
@@ -77,9 +60,9 @@ function Register() {
           <input
             className="form-control"
             name="email"
-            value={user.email}
-            required
-            onChange={handleChange}
+            value={email} 
+            required 
+            onChange={(e)=>setEmail(e.target.value)}
             type ="email"
           ></input>
         </div>
@@ -88,9 +71,9 @@ function Register() {
           <input
             className="form-control"
             name="mobile"
-            value={user.mobile}
+            value={mobile}
             required
-            onChange={handleChange}
+            onChange={(e)=>setMobile(e.target.value)}
           ></input>
         </div>
         <div className="form-group">
@@ -98,9 +81,9 @@ function Register() {
           <input
             className="form-control"
             name="password"
-            value={user.password}
+            value={password}
             required
-            onChange={handleChange}
+            onChange={(e)=>setPassword(e.target.value)}
             minLength='6'
           ></input>
         </div>
@@ -109,14 +92,14 @@ function Register() {
           <input
             className="form-control"
             name="cpassword"
-            value={user.cpassword}
+            value={cpassword}
             required
-            onChange={handleChange}
+            onChange={(e)=>setCpassword(e.target.value)}
             minLength='6'
           ></input>
         </div>
         <div className="row text-center my-3 px-2">
-          <button className="col btn btn-dark mx-1" type="submit">
+          <button className="col btn btn-dark mx-1" type="submit" onClick={submit}>
             Submit
           </button>
           <a
@@ -124,7 +107,7 @@ function Register() {
             href="login.js"
             role="button"
           >
-            {" "}
+            {/* {" "} */}
             Go Login
           </a>
         </div>

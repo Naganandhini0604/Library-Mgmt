@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import React, { useState } from "react";
+import {useNavigate} from 'react-router-dom'
 function Login(){
     const [user,setUser] = useState({
         email : "",
@@ -27,7 +28,10 @@ function Login(){
                 alert("Login Successfully..")
               })
             }
-            
+            const navigate=useNavigate();
+        const submit=()=>{
+          navigate("/User.js")
+        }
     
 return(
         <div id="login">
@@ -42,8 +46,8 @@ return(
             <input className="form-control" name="password"value={user.password} required onChange={handleChange}></input>
         </div>
         <div className='row text-center my-3 px-2'>
-            <button className='col btn btn-dark mx-1'>Submit</button>
-            <a className='col btn btn-outline-light mx-1' href="User.js" role="button">Go To Portal</a><br/><br/>
+            <button className='col btn btn-dark mx-1' onClick={submit}>Submit</button>
+            {/* <a className='col btn btn-outline-light mx-1' href="User.js" role="button">Go To Portal</a><br/><br/> */}
             <a href="Register.js" > An New Account</a>
         </div>
      </form>

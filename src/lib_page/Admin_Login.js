@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import React, { useState } from "react";
+import {useNavigate} from 'react-router-dom'
 
 function Admin_Login(){
     const[email, setEmail]=useState("");
@@ -20,7 +21,10 @@ function Admin_Login(){
             alert("Login Successfully..")
           })
         }
-        
+        const navigate=useNavigate();
+        const submit=()=>{
+          navigate("/Admin_dash.js")
+        }
 
     return(
         <div id="login">
@@ -35,7 +39,7 @@ function Admin_Login(){
             <input className="form-control" name="password" value={password} required onChange={(e)=>setPassword(e.target.value)}></input>
         </div>
         <div className='row text-center my-3 px-2'>
-            <button className='col btn btn-dark mx-1'>Submit</button>
+            <button className='col btn btn-dark mx-1'onClick={submit}>Submit</button>
             <a className='col btn btn-outline-light mx-1'  role="button" href="Admin_dash.js">Go To Portal</a><br/><br/>
             {/* <a href="Register.js" > An New Account</a> */}
         </div>
