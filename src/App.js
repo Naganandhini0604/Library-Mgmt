@@ -13,6 +13,8 @@ import Adminsearch from "./lib_page/Adminsearch";
 import Update from "./lib_page/Update";
 import Delete from "./lib_page/Delete";
 import Place_order from "./lib_page/place_order";
+import Newupdate from "./lib_page/Newupdate";
+
 
 function App() {
   
@@ -20,17 +22,19 @@ function App() {
     <div>
       <BrowserRouter>
       <Routes>
-        <Route path="/Home.js" element = {<Home/>}/>
-        <Route path="/Register.js" element = {<Register/>}/>
-        <Route path="/Login.js" element ={<Login/>}/>
-        <Route path="/User.js" element={<User/>}/>
-        <Route path="/admin_Login.js" element={<Admin_Login/>}/>
-        <Route path="/Admin_dash.js" element={<Admin_dash/>}/>
-        <Route path="/Search.js" element={<Search/>}/>
-        <Route path="/Adminsearch.js" element={<Adminsearch/>}/>
-        <Route path="/Update.js" element={<Update/>}/>
-        <Route path="/Delete.js" element={<Delete/>}/>
+        <Route path="/Home" element = {<Home/>}/>
+        <Route path="/Register" element = {<Register/>}/>
+        <Route path="/Login" element ={<Login/>}/>
+        <Route path="/User" element={<User/>}/>
+        <Route path="/admin_Login" element={<Admin_Login/>}/>
+        <Route path="/Admin_dash" element={<Admin_dash/>}/>
+        <Route path="/Search" element={<Search/>}/>
+        <Route path="/Adminsearch" element={<Adminsearch/>}/>
+        <Route path="/Update" element={<Update/>}/>
+        <Route path="/Delete" element={<Delete/>}/>
         <Route path="/place_order" element={<Place_order/>}/>
+        <Route path="/Newupdate" element={<Newupdate/>}/>
+        
        
         </Routes>
       </BrowserRouter>

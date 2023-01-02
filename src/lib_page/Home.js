@@ -12,9 +12,9 @@ function Home() {
             <span>&#9990;</span>
             <li id="hi">+7076376397</li>
             <ul className="li">
-            <li><a href="Register.js">Register</a></li>
-            <li><a href="Login.js">Login</a></li>
-            <li>LogOut</li>
+            <li><a href="Register">Register</a></li>
+            <li><a href="Login">Login</a></li>
+            <li ><a href="Admin_Login">Admin</a></li>
             </ul>
         </ul>
         
@@ -35,13 +35,13 @@ function Home() {
             <li>MAILUS</li> */}
             <input className="form-control" placeholder="search"/>
             <li>list of books</li><br/>
-            <li>Empty cart</li>
+            <li></li>
         </ul>
      
      </div>
      <div id="pic">
          <button >
-          <a href="Admin_login.js">
+          <a href="Admin_login">
           <img src="https://cdn3.f-cdn.com/contestentries/1733723/42113248/5e47d289f1335_thumb900.jpg"
           height="200px" width="200px" alt="" >
           </img></a>
@@ -49,7 +49,7 @@ function Home() {
      </div>
      <div className="topic">
       <button>
-        <a href="Register.js">
+        <a href="Register">
         <img src="https://e7.pngegg.com/pngimages/117/752/png-clipart-computer-icons-user-icon-design-numerous-miscellaneous-logo.png"
         height="200px" width="200px" alt=""></img>
          </a>

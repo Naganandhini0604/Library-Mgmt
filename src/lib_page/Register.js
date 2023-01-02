@@ -28,6 +28,7 @@ function Register() {
       console.log("users", res);
       localStorage.setItem("user",JSON.stringify(user));
       alert("Registered successfully..")
+      navigate("/Login");
     });
     // }catch(err){
     //   console.error(err.response);
@@ -36,9 +37,10 @@ function Register() {
 }
 
 const navigate=useNavigate();
-        const submit=()=>{
-          navigate("/Login.js");
-        }
+        // const submit=()=>{
+        //   navigate("/Login");
+          
+        // }
 
   return (
     <div id="page">
@@ -80,6 +82,7 @@ const navigate=useNavigate();
           <label className="my-2">Enter the passowrd</label>
           <input
             className="form-control"
+            type="password"
             name="password"
             value={password}
             required
@@ -91,6 +94,7 @@ const navigate=useNavigate();
           <label className="my-2">Enter the confirm passowrd</label>
           <input
             className="form-control"
+            type="password"
             name="cpassword"
             value={cpassword}
             required
@@ -99,12 +103,12 @@ const navigate=useNavigate();
           ></input>
         </div>
         <div className="row text-center my-3 px-2">
-          <button className="col btn btn-dark mx-1" type="submit" onClick={submit}>
+          <button className="col btn btn-dark mx-1" type="submit" >
             Submit
           </button>
           <a
             className="col btn btn-outline-light mx-1"
-            href="login.js"
+            href="login"
             role="button"
           >
             {/* {" "} */}
